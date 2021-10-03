@@ -16,60 +16,66 @@ class ViewController: UIViewController {
     var advBtn: String = "Advance - With History"
     var stdBtn: String = "Standard - No History"
     
+    // use these for enabling/disabling buttons
+    // cant find a way to update buttons using only one variable
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
+    @IBOutlet weak var btn5: UIButton!
+    @IBOutlet weak var btn6: UIButton!
+    @IBOutlet weak var btn7: UIButton!
+    @IBOutlet weak var btn8: UIButton!
+    @IBOutlet weak var btn9: UIButton!
+    @IBOutlet weak var btn0: UIButton!
+    @IBOutlet weak var btnPlus: UIButton!
+    @IBOutlet weak var btnMinus: UIButton!
+    @IBOutlet weak var btnMultiply: UIButton!
+    @IBOutlet weak var btnDivide: UIButton!
+    @IBOutlet weak var btnEquals: UIButton!
+    
+    lazy var numButtons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnPlus, btnMultiply, btnDivide, btnEquals]
+    lazy var optButtons = [btnPlus, btnMinus, btnMultiply, btnDivide, btnEquals]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func btnClick(_ sender: UIButton) {
         
         switch sender.titleLabel!.text! {
             case "C":
-                // clear
+                // clear the equation box
                 lblOutput.text! = ""
+                // activate the numbers and inactivate the operator buttons
+                toogleButtons(numIsEnabled: true, optIsEnabled: false)
+                // reset the calculator statement list
                 calculator.clearStatement()
                 break
             case "=":
-                equalsIsPressed = true
-                
-                // equals was pressed, but we hit an invalid operation previously, dont do anything
-                if (lblOutput.text! == ErrorMessage.invalidOpt.rawValue) {
-                    return
-                }
-            
-                // validations passed
-                do {
-                    try calculator.calc()
-                    lblOutput.text! = calculator.getStatement()
-                } catch {
-                    lblOutput.text! = ErrorMessage.invalidOpt.rawValue
-                }
+                // calculate
+                calculator.calc()
+                // show the resulting statement
+                lblOutput.text! = calculator.getStatement()
                 
                 // if on advanced, save history
                 if (calculator.mode == CalculatorMode.advance) {
                     historyOutput.text = calculator.getHistory()
                 }
-                
+            
+                // activate the numbers and inactivate the operator buttons
+                toogleButtons(numIsEnabled: true, optIsEnabled: false)
+                // reset the calculator statement list
                 calculator.clearStatement()
                 break
             default:
-                // if operation was invalid previously or equals was pressed previously, clear the label
-            if (lblOutput.text! == ErrorMessage.invalidOpt.rawValue
-                    || equalsIsPressed) {
-                    lblOutput.text! = ""
-                    equalsIsPressed = false
-                }
-            
-                // if push returns true, character was pushed successfully
-                // otherwise, mark as invalid
-                if (calculator.push(s: sender.titleLabel!.text!)) {
-                    lblOutput.text! += sender.titleLabel!.text!
-
-                } else {
-                    lblOutput.text! = ErrorMessage.invalidOpt.rawValue
-                    calculator.clearStatement()
-                }
+                // numbers or operators were pressed
+                // add the current pressed button to the statement list
+                calculator.push(s: sender.titleLabel!.text!)
+                // activate/inactivate buttons depending on what was pressed
+                toogleButtons(numIsEnabled: !btn1.isEnabled, optIsEnabled: !btnPlus.isEnabled)
+                lblOutput.text! = calculator.getStatement()
         }
     }
     
@@ -92,10 +98,27 @@ class ViewController: UIViewController {
         
     }
     
+    // enable disables buttons
+    func toogleButtons(numIsEnabled: Bool, optIsEnabled: Bool) {
+        for button in numButtons {
+            button!.isEnabled = numIsEnabled
+            // updates the button colors
+            updateBtnColor(button: button!, color: UIColor.systemOrange)
+            
+        }
+        
+        for button in optButtons {
+            button!.isEnabled = optIsEnabled
+            updateBtnColor(button: button!, color: UIColor.systemIndigo)
+        }
+    }
     
+    // gray/ungray the buttons
+    func updateBtnColor(button : UIButton, color: UIColor) {
+        if (!button.isEnabled) {
+            button.backgroundColor = UIColor.darkGray
+        } else {
+            button.backgroundColor = color
+        }
+    }
 }
-
-enum ErrorMessage: String {
-    case invalidOpt = "Invalid Operation"
-}
-

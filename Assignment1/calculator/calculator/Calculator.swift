@@ -17,24 +17,12 @@ class Calculator {
     
     // Adds items to statement to use for calculation later
     // Excludes "=" and output. These are handled in calc
-    func push(s: String) -> Bool {
-        // validate the input
-        // error on the following:
-        // - list is empty and operand was used
-        // - consecutive numbers/operands were used
-        if ((statement.isEmpty && !s.isInt)
-            || (!statement.isEmpty && statement.last!.isInt && s.isInt)
-            || (!statement.isEmpty && !statement.last!.isInt && !s.isInt)) {
-            return false
-        }
-        
+    func push(s: String) {
         statement.append(s)
-        
-        return true
     }
     
     // Perform calculation
-    func calc() throws {
+    func calc() {
         
         var result = 0
         var prev: String? = nil
@@ -45,7 +33,7 @@ class Calculator {
             if (ch.isInt) {
                 // if prev not nil, apply the operand
                 if (prev != nil) {
-                    result = try applyOpt(x: result, y: Int(ch)!, opt: prev!)
+                    result = applyOpt(x: result, y: Int(ch)!, opt: prev!)
                 } else {
                     result = Int(ch)!
                 }
@@ -56,7 +44,8 @@ class Calculator {
             
         }
         // complete the statement, add =result
-        statement.append("=" + String(result))
+        push(s: "=")
+        push(s: String(result))
         
         // save history if on advance mode
         if (mode == CalculatorMode.advance) {
@@ -66,7 +55,7 @@ class Calculator {
     }
     
     // Helper to do the calculation
-    func applyOpt(x: Int, y: Int, opt: String) throws -> Int {
+    func applyOpt(x: Int, y: Int, opt: String) -> Int {
         
         var result: Int = 0
         switch opt {
