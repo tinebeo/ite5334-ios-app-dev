@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblOutput: UILabel!
     @IBOutlet weak var historyOutput: UITextView!
     var calculator: Calculator = Calculator()
-    var advBtn: String = "Advance - With History"
-    var stdBtn: String = "Standard - No History"
     
     // use these for enabling/disabling buttons
     // cant find a way to update buttons using only one variable
@@ -81,14 +79,14 @@ class ViewController: UIViewController {
     @IBAction func historySettingBtnClick(_ sender: UIButton) {
         
         if (calculator.mode == CalculatorMode.standard) {
-            sender.setTitle(advBtn, for: .normal)
+            sender.setTitle("Advance - With History", for: .normal)
             
             // when switched back to standard, clear the history output
             calculator.clearHistory()
             historyOutput.text = ""
             calculator.mode = CalculatorMode.advance
         } else {
-            sender.setTitle(stdBtn, for: .normal)
+            sender.setTitle("Standard - No History", for: .normal)
             calculator.mode = CalculatorMode.standard
         }
         
