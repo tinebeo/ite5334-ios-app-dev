@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblOutput: UILabel!
     @IBOutlet weak var historyOutput: UITextView!
     var calculator: Calculator = Calculator()
-    var equalsIsPressed: Bool = false
     var advBtn: String = "Advance - With History"
     var stdBtn: String = "Standard - No History"
     

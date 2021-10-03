@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// NOTE: Validations on character input were removed
+//      Viewcontroller controls what user can click on
 class Calculator {
     
     var statement = [String]()
@@ -16,7 +18,6 @@ class Calculator {
     var mode = CalculatorMode.standard
     
     // Adds items to statement to use for calculation later
-    // Excludes "=" and output. These are handled in calc
     func push(s: String) {
         statement.append(s)
     }
