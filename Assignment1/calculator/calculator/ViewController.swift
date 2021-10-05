@@ -79,14 +79,14 @@ class ViewController: UIViewController {
     @IBAction func historySettingBtnClick(_ sender: UIButton) {
         
         if (calculator.mode == CalculatorMode.standard) {
-            sender.setTitle("Advance - With History", for: .normal)
+            sender.setTitle("Standard - No History", for: .normal)
             
-            // when switched back to standard, clear the history output
+            // when switched back to advance, clear the history output
             calculator.clearHistory()
             historyOutput.text = ""
             calculator.mode = CalculatorMode.advance
         } else {
-            sender.setTitle("Standard - No History", for: .normal)
+            sender.setTitle("Advance - With History", for: .normal)
             calculator.mode = CalculatorMode.standard
         }
         
