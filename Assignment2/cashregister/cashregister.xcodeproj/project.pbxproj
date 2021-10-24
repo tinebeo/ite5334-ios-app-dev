@@ -22,7 +22,6 @@
 		ADF1110527235C6D00667561 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110427235C6D00667561 /* ManageViewController.swift */; };
 		ADF111072723692300667561 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF111062723692300667561 /* HistoryTableViewController.swift */; };
 		ADF1110927236BD700667561 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110827236BD700667561 /* History.swift */; };
-		ADF1110B2724BB1B00667561 /* CustomHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110A2724BB1A00667561 /* CustomHistoryCell.swift */; };
 		ADF1110D2724C88B00667561 /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110C2724C88B00667561 /* HistoryDetailsViewController.swift */; };
 		ADF1110F27250D7900667561 /* RestockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110E27250D7800667561 /* RestockViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 		ADF1110427235C6D00667561 /* ManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
 		ADF111062723692300667561 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		ADF1110827236BD700667561 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
-		ADF1110A2724BB1A00667561 /* CustomHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHistoryCell.swift; sourceTree = "<group>"; };
 		ADF1110C2724C88B00667561 /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
 		ADF1110E27250D7800667561 /* RestockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				ADF110FE272331CC00667561 /* CustomProductCell.swift */,
-				ADF1110A2724BB1A00667561 /* CustomHistoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,7 +312,6 @@
 				ADF1110D2724C88B00667561 /* HistoryDetailsViewController.swift in Sources */,
 				ADF110F82723283C00667561 /* Product.swift in Sources */,
 				ADF110C427231CFC00667561 /* AppDelegate.swift in Sources */,
-				ADF1110B2724BB1B00667561 /* CustomHistoryCell.swift in Sources */,
 				ADF11101272349E100667561 /* Store.swift in Sources */,
 				ADF1110F27250D7900667561 /* RestockViewController.swift in Sources */,
 				ADF110C627231CFC00667561 /* SceneDelegate.swift in Sources */,

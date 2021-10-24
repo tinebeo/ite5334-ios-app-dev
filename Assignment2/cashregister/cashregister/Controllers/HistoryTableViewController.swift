@@ -28,7 +28,7 @@ class HistoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! CustomHistoryCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! CustomProductCell
         
         cell.productLbl.text = store?.getHistory(idx: indexPath.row).name
         cell.productQty.text = String(store!.getHistory(idx: indexPath.row).quantity)
