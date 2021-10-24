@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADF110C427231CFC00667561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110C327231CFC00667561 /* AppDelegate.swift */; };
+		ADF110C627231CFC00667561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110C527231CFC00667561 /* SceneDelegate.swift */; };
+		ADF110C827231CFC00667561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110C727231CFC00667561 /* ViewController.swift */; };
+		ADF110CB27231CFC00667561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF110C927231CFC00667561 /* Main.storyboard */; };
+		ADF110CD27231CFF00667561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF110CC27231CFF00667561 /* Assets.xcassets */; };
+		ADF110D027231CFF00667561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF110CE27231CFF00667561 /* LaunchScreen.storyboard */; };
+		ADF110DB27231D0000667561 /* cashregisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110DA27231D0000667561 /* cashregisterTests.swift */; };
+		ADF110E527231D0000667561 /* cashregisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110E427231D0000667561 /* cashregisterUITests.swift */; };
+		ADF110E727231D0000667561 /* cashregisterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110E627231D0000667561 /* cashregisterUITestsLaunchTests.swift */; };
+		ADF110F82723283C00667561 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110F72723283C00667561 /* Product.swift */; };
+		ADF110FF272331CC00667561 /* CustomProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF110FE272331CC00667561 /* CustomProductCell.swift */; };
+		ADF11101272349E100667561 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF11100272349E100667561 /* Store.swift */; };
+		ADF1110527235C6D00667561 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110427235C6D00667561 /* ManageViewController.swift */; };
+		ADF111072723692300667561 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF111062723692300667561 /* HistoryTableViewController.swift */; };
+		ADF1110927236BD700667561 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110827236BD700667561 /* History.swift */; };
+		ADF1110B2724BB1B00667561 /* CustomHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110A2724BB1A00667561 /* CustomHistoryCell.swift */; };
+		ADF1110D2724C88B00667561 /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110C2724C88B00667561 /* HistoryDetailsViewController.swift */; };
+		ADF1110F27250D7900667561 /* RestockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1110E27250D7800667561 /* RestockViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF110D727231D0000667561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF110B827231CFB00667561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF110BF27231CFB00667561;
+			remoteInfo = cashregister;
+		};
+		ADF110E127231D0000667561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF110B827231CFB00667561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF110BF27231CFB00667561;
+			remoteInfo = cashregister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADF110C027231CFC00667561 /* cashregister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cashregister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF110C327231CFC00667561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADF110C527231CFC00667561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADF110C727231CFC00667561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADF110CA27231CFC00667561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF110CC27231CFF00667561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF110CF27231CFF00667561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF110D127231CFF00667561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF110D627231D0000667561 /* cashregisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cashregisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF110DA27231D0000667561 /* cashregisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashregisterTests.swift; sourceTree = "<group>"; };
+		ADF110E027231D0000667561 /* cashregisterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cashregisterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF110E427231D0000667561 /* cashregisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashregisterUITests.swift; sourceTree = "<group>"; };
+		ADF110E627231D0000667561 /* cashregisterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashregisterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADF110F72723283C00667561 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		ADF110FE272331CC00667561 /* CustomProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProductCell.swift; sourceTree = "<group>"; };
+		ADF11100272349E100667561 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		ADF1110427235C6D00667561 /* ManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
+		ADF111062723692300667561 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		ADF1110827236BD700667561 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		ADF1110A2724BB1A00667561 /* CustomHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHistoryCell.swift; sourceTree = "<group>"; };
+		ADF1110C2724C88B00667561 /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
+		ADF1110E27250D7800667561 /* RestockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestockViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF110BD27231CFB00667561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF110D327231D0000667561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF110DD27231D0000667561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADF110B727231CFB00667561 = {
+			isa = PBXGroup;
+			children = (
+				ADF110C227231CFC00667561 /* cashregister */,
+				ADF110D927231D0000667561 /* cashregisterTests */,
+				ADF110E327231D0000667561 /* cashregisterUITests */,
+				ADF110C127231CFC00667561 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF110C127231CFC00667561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110C027231CFC00667561 /* cashregister.app */,
+				ADF110D627231D0000667561 /* cashregisterTests.xctest */,
+				ADF110E027231D0000667561 /* cashregisterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF110C227231CFC00667561 /* cashregister */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110F92723289E00667561 /* Views */,
+				ADF110F62723282000667561 /* Models */,
+				ADF110F42723280C00667561 /* Controllers */,
+				ADF110C327231CFC00667561 /* AppDelegate.swift */,
+				ADF110C527231CFC00667561 /* SceneDelegate.swift */,
+				ADF110C927231CFC00667561 /* Main.storyboard */,
+				ADF110CC27231CFF00667561 /* Assets.xcassets */,
+				ADF110CE27231CFF00667561 /* LaunchScreen.storyboard */,
+				ADF110D127231CFF00667561 /* Info.plist */,
+			);
+			path = cashregister;
+			sourceTree = "<group>";
+		};
+		ADF110D927231D0000667561 /* cashregisterTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110DA27231D0000667561 /* cashregisterTests.swift */,
+			);
+			path = cashregisterTests;
+			sourceTree = "<group>";
+		};
+		ADF110E327231D0000667561 /* cashregisterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110E427231D0000667561 /* cashregisterUITests.swift */,
+				ADF110E627231D0000667561 /* cashregisterUITestsLaunchTests.swift */,
+			);
+			path = cashregisterUITests;
+			sourceTree = "<group>";
+		};
+		ADF110F42723280C00667561 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110C727231CFC00667561 /* ViewController.swift */,
+				ADF1110427235C6D00667561 /* ManageViewController.swift */,
+				ADF111062723692300667561 /* HistoryTableViewController.swift */,
+				ADF1110C2724C88B00667561 /* HistoryDetailsViewController.swift */,
+				ADF1110E27250D7800667561 /* RestockViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADF110F62723282000667561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110F72723283C00667561 /* Product.swift */,
+				ADF11100272349E100667561 /* Store.swift */,
+				ADF1110827236BD700667561 /* History.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADF110F92723289E00667561 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADF110FE272331CC00667561 /* CustomProductCell.swift */,
+				ADF1110A2724BB1A00667561 /* CustomHistoryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF110BF27231CFB00667561 /* cashregister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF110EA27231D0000667561 /* Build configuration list for PBXNativeTarget "cashregister" */;
+			buildPhases = (
+				ADF110BC27231CFB00667561 /* Sources */,
+				ADF110BD27231CFB00667561 /* Frameworks */,
+				ADF110BE27231CFB00667561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cashregister;
+			productName = cashregister;
+			productReference = ADF110C027231CFC00667561 /* cashregister.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF110D527231D0000667561 /* cashregisterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF110ED27231D0000667561 /* Build configuration list for PBXNativeTarget "cashregisterTests" */;
+			buildPhases = (
+				ADF110D227231D0000667561 /* Sources */,
+				ADF110D327231D0000667561 /* Frameworks */,
+				ADF110D427231D0000667561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF110D827231D0000667561 /* PBXTargetDependency */,
+			);
+			name = cashregisterTests;
+			productName = cashregisterTests;
+			productReference = ADF110D627231D0000667561 /* cashregisterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADF110DF27231D0000667561 /* cashregisterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF110F027231D0000667561 /* Build configuration list for PBXNativeTarget "cashregisterUITests" */;
+			buildPhases = (
+				ADF110DC27231D0000667561 /* Sources */,
+				ADF110DD27231D0000667561 /* Frameworks */,
+				ADF110DE27231D0000667561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF110E227231D0000667561 /* PBXTargetDependency */,
+			);
+			name = cashregisterUITests;
+			productName = cashregisterUITests;
+			productReference = ADF110E027231D0000667561 /* cashregisterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF110B827231CFB00667561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					ADF110BF27231CFB00667561 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ADF110D527231D0000667561 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ADF110BF27231CFB00667561;
+					};
+					ADF110DF27231D0000667561 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ADF110BF27231CFB00667561;
+					};
+				};
+			};
+			buildConfigurationList = ADF110BB27231CFB00667561 /* Build configuration list for PBXProject "cashregister" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF110B727231CFB00667561;
+			productRefGroup = ADF110C127231CFC00667561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF110BF27231CFB00667561 /* cashregister */,
+				ADF110D527231D0000667561 /* cashregisterTests */,
+				ADF110DF27231D0000667561 /* cashregisterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF110BE27231CFB00667561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF110D027231CFF00667561 /* LaunchScreen.storyboard in Resources */,
+				ADF110CD27231CFF00667561 /* Assets.xcassets in Resources */,
+				ADF110CB27231CFC00667561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF110D427231D0000667561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF110DE27231D0000667561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF110BC27231CFB00667561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF1110927236BD700667561 /* History.swift in Sources */,
+				ADF111072723692300667561 /* HistoryTableViewController.swift in Sources */,
+				ADF110C827231CFC00667561 /* ViewController.swift in Sources */,
+				ADF1110D2724C88B00667561 /* HistoryDetailsViewController.swift in Sources */,
+				ADF110F82723283C00667561 /* Product.swift in Sources */,
+				ADF110C427231CFC00667561 /* AppDelegate.swift in Sources */,
+				ADF1110B2724BB1B00667561 /* CustomHistoryCell.swift in Sources */,
+				ADF11101272349E100667561 /* Store.swift in Sources */,
+				ADF1110F27250D7900667561 /* RestockViewController.swift in Sources */,
+				ADF110C627231CFC00667561 /* SceneDelegate.swift in Sources */,
+				ADF1110527235C6D00667561 /* ManageViewController.swift in Sources */,
+				ADF110FF272331CC00667561 /* CustomProductCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF110D227231D0000667561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF110DB27231D0000667561 /* cashregisterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF110DC27231D0000667561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF110E727231D0000667561 /* cashregisterUITestsLaunchTests.swift in Sources */,
+				ADF110E527231D0000667561 /* cashregisterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF110D827231D0000667561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF110BF27231CFB00667561 /* cashregister */;
+			targetProxy = ADF110D727231D0000667561 /* PBXContainerItemProxy */;
+		};
+		ADF110E227231D0000667561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF110BF27231CFB00667561 /* cashregister */;
+			targetProxy = ADF110E127231D0000667561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF110C927231CFC00667561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF110CA27231CFC00667561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF110CE27231CFF00667561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF110CF27231CFF00667561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF110E827231D0000667561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADF110E927231D0000667561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF110EB27231D0000667561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cashregister/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cae.cashregister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF110EC27231D0000667561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cashregister/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cae.cashregister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF110EE27231D0000667561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cae.cashregisterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cashregister.app/cashregister";
+			};
+			name = Debug;
+		};
+		ADF110EF27231D0000667561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cae.cashregisterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cashregister.app/cashregister";
+			};
+			name = Release;
+		};
+		ADF110F127231D0000667561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cae.cashregisterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cashregister;
+			};
+			name = Debug;
+		};
+		ADF110F227231D0000667561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cae.cashregisterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cashregister;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF110BB27231CFB00667561 /* Build configuration list for PBXProject "cashregister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF110E827231D0000667561 /* Debug */,
+				ADF110E927231D0000667561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF110EA27231D0000667561 /* Build configuration list for PBXNativeTarget "cashregister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF110EB27231D0000667561 /* Debug */,
+				ADF110EC27231D0000667561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF110ED27231D0000667561 /* Build configuration list for PBXNativeTarget "cashregisterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF110EE27231D0000667561 /* Debug */,
+				ADF110EF27231D0000667561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF110F027231D0000667561 /* Build configuration list for PBXNativeTarget "cashregisterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF110F127231D0000667561 /* Debug */,
+				ADF110F227231D0000667561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADF110B827231CFB00667561 /* Project object */;
+}
