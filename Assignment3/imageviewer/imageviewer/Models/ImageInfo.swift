@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class ImageInfo {
+    
+    var title : String = ""
+    var url : String = ""
+    
+    init(t: String, u: String) {
+        title = t
+        url = u
+    }
+}
